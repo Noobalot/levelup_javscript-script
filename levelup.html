@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/levelupbutton.js"></script>
+    </head>
+    <body class="bg-dark" style="background-color:blue;">
+        <div class="container-fluid p-0 m-0">
+            <div class="row p-0 m-0 mx-auto p-2">
+                <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                    <div class="row bg-white rounded-2 p-2">
+                        <div class="col-12 col-lg-6 p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="text-center">Base Stats</h4>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">HP</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basehp">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">STR</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basestr">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">MAG</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basemag">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEX</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basedex">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">SPD</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basespd">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">LCK</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="baselck">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEF</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basedef">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">RES</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="baseres">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">CHA</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="basecha">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Total Base Stats</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span id="totalbase" style="font-weight:bolder;">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <h4 class="text-center">Level Up Stats</h4>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">HP</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvluphp">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">STR</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupstr">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">MAG</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupmag">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEX</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupdex">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">SPD</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupspd">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">LCK</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvluplck">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEF</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupdef">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">RES</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupres">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">CHA</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="lvlupcha">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Total Level up Stats</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span id="totalvlstats" style="font-weight:bolder;">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4 class="text-center">Combined Stats</h4>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">HP</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedhp">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">STR</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedstr">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">MAG</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedmag">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEX</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combineddex">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">SPD</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedspd">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">LCK</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedlck">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEF</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combineddef">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">RES</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedres">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">CHA</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="combinedcha">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Total Combined Stats</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span id="combinedstats" style="font-weight:bolder;">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h4 class="text-center">Growth Rates</h4>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">HP</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthhp">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">STR</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthstr">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">MAG</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthmag">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEX</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthdex">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">SPD</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthspd">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">LCK</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthlck">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">DEF</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthdef">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">RES</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthres">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">CHA</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span class="" id="growthcha">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Total Growth Rates</span>
+                                                </div>
+                                                <div class="col-12 text-center">
+                                                    <span id="totalgrowth" style="font-weight:bolder;">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 mx-auto text-center p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Level</span>
+                                </div>
+                                <div class="col-12">
+                                    <span id="lvl">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-12 mx-auto text-center p-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="w-100 bg-primary d-block rounded-2 text-white">Experience Points</span>
+                                </div>
+                                <div class="col-12">
+                                    <span id="exp">0</span>/<span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 p-2">
+                            <button type="button" class="btn btn-primary w-100" onclick="levelupbutton()">Level Up</button>
+                        </div>
+                        <div class="col-12 p-2">
+                            <button type="button" class="btn btn-primary w-100" onclick="experiencebuttonup()">Add Experience Point</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/levelupbutton.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
